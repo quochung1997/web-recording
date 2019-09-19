@@ -1,0 +1,14 @@
+{
+  "name": "voice-recorder-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "author": "quoc hung",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.531.0"
+  }
+}

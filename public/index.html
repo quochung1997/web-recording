@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>  
+    
+    <div class="container">
+      
+      <div class="card-panel">
+        <span class="blue-text text-darken-2">Đây là trang web ghi âm dữ liệu</span>
+      </div>
+
+      <div class="card-panel" id="email-area">
+        <div class="row">
+            <div class="col s2">
+            </div>
+            <div class="input-field col s8">
+              <input placeholder="nhập email của bạn" id="email-input" type="text" class="validate">
+              <label for="first_name">Email</label>
+            </div>
+            <div class="col s2">
+            </div>
+        </div>
+        <div class="center-align">
+            <button class="btn waves-effect waves-light blue" id="emailBtn">
+              Submit
+            </button>
+        </div>
+      </div>
+
+      <div class="card-panel" id="recording-area">
+        <p class="blue-text text-darken-2">Bạn đã ghi âm được: <span id="labelsCountTxt">0</span>/26 từ</p>
+      
+        <div class="progress">
+          <div class="determinate blue text-darken-2" id="labelsCountProg" style="width: 0%"></div>
+        </div>
+        
+        <div>
+          <h5 id="title" class="center-align blue-text text-darken-2">Từ cần ghi âm: <strong id="labelTxt">[Chưa có, bấm next]</strong></h5>
+        </div>
+        
+        <div class="center-align">
+          <button class="btn waves-effect waves-light blue" id="startBtn">
+            bắt đầu
+          </button>
+          <button class="btn waves-effect waves-light blue" id="nextBtn">
+            next
+          </button>
+        </div>
+        
+      </div>
+
+    </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
